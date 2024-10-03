@@ -1,0 +1,23 @@
+//Programa escrito em C
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+//Declarando as variáveis
+int indice = 12;
+int soma = 0;
+
+//Usando for para realizar a soma
+for(int k = 1; k < indice;){
+  k++;
+  soma += k;
+}
+
+//Exibindo o resultado
+system("clear");
+
+printf("Soma = %d", soma);
+
+return 0;
+}
