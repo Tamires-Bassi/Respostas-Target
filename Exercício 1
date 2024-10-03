@@ -23,6 +23,8 @@ int main(){
   int num;
 
   //Recebendo o valor de num do usuário
+  system("clear")
+
   printf("Digite um número inteiro: ");
   fflush(stdin);
   scanf("%d", &num);
