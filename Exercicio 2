@@ -1,0 +1,31 @@
+//Programa escrito em C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(){
+//Declarando as variáveis
+char string[100];
+int cont = 0;  //Zerando a contagem para evitar erros
+
+//Recebendo a string do usuário
+printf("Digite uma string de até 100 caracteres: ");
+fflush(stdin);
+fgets(string, 100, stdin); //Lê a string, incluindo espaços
+
+//Usanso for para pergorrer a string
+for(int i = 0; i < strlen(string); i++){
+  //Usando If para acha as letrar 'a' na string
+  if(string[i] == 'A' || string[i] == 'a'){
+    cont ++; //Imcrementardo a contagem
+  }
+}
+
+//Exibindo o resultado
+system("clear");
+
+printf("Na string possui %d letra(s) a", cont);
+
+return 0;
+}
