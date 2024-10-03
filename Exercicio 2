@@ -10,6 +10,8 @@ char string[100];
 int cont = 0;  //Zerando a contagem para evitar erros
 
 //Recebendo a string do usuário
+system("clear);
+
 printf("Digite uma string de até 100 caracteres: ");
 fflush(stdin);
 fgets(string, 100, stdin); //Lê a string, incluindo espaços
