@@ -1,0 +1,43 @@
+//Programando em C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdbool.h>
+
+//Função para descobrir se o número é um quadrado perfeito
+bool quadrado_perfeito(float num){
+  int raiz = (sqrt(num));
+  return raiz*raiz == num;
+}
+
+//Funções para verificar se o número pertence à série de Fibonacci
+bool fibonacci(float x){
+  // x é Fibonacci se o resultado de 5*x*x + 4 ou 5*x*x - 4 ou ambos forem quadrados perfeitos
+  return quadrado_perfeito(5*x*x + 4) || quadrado_perfeito(5*x*x - 4);
+}
+
+//Função principal]
+int main(){
+  //Declarando as variáveis
+  int num;
+
+  //Recebendo o valor de num do usuário
+  printf("Digite um número inteiro: ");
+  fflush(stdin);
+  scanf("%d", &num);
+
+  //Descobrindo se o valor digitado pelo usuário pertence a sequência Fibonacci
+  if(fibonacci(num)){
+    system("clear");
+
+    printf("O número %d pertence a sequência Fibonacci", num);
+  }
+  else{
+    system("clear");
+
+    printf("O número %d não pertense a sequência Fibonacci", num);
+  }
+
+return 0;
+}
