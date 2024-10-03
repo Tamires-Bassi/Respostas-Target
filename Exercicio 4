@@ -1,0 +1,63 @@
+//Programa escrito em C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main() {
+    
+system("clear");
+
+// Letra a
+printf("a- ");
+// For para imprimir a sequência de números ímpares
+for (int i = 1; i < 10; i++) {
+    if (i % 2 == 1) { 
+      printf("%d, ", i);
+    }
+}
+
+// Letra b
+ printf("\nb- ");
+ // For para imprimir dois elevado a algum número
+for (int i = 1; i < 8; i++) {
+    printf("%d, ", (int)pow(2, i)); 
+}
+
+// Letra c
+printf("\nc- ");
+// For para imprimir os quadrados dos números inteiros
+for (int i = 0; i < 8; i++) {
+    printf("%d, ", (int)pow(i, 2)); 
+}
+
+// Letra d
+printf("\nd- ");
+// For para imprimir os números pares ao quadrado
+for (int i = 2; i < 11; i++) {
+    if (i % 2 == 0) { 
+        printf("%d, ", (int)pow(i, 2)); 
+    }
+}
+
+// Letra e
+printf("\ne- ");
+int num = 1, a_num = 0;
+// For para imprimir a sequência de Fibonacci
+for (int i = 0; i < 7; i++) {
+    int n_num = num + a_num;
+    printf("%d, ", num);
+    a_num = num;
+    num = n_num;
+}
+
+// Letra f
+printf("\nf- 2, 10, 12, 16, 17, 18, 19, 21\n");
+
+return 0;
+}
+
+
+
+
+    
